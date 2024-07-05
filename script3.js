@@ -1,4 +1,4 @@
-const path = +window.location.search[1];
+const path = +window.location.search.split("?")[1];
 console.log(path)
 var percent = (path * 100 / 10);
 
