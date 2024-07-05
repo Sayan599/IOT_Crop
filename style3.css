@@ -1,0 +1,100 @@
+* {
+    box-sizing: border-box;
+    border: 0;
+    margin: 0;
+}
+
+body {
+    margin: 50px 0px;
+    font-family: "Poppins";
+    background-color: #F6F4F0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+header {
+    margin-bottom: 70px;
+}
+
+header h1 {
+    text-align: center;
+}
+
+.result-box {
+    display: flex;
+    width: 750px;
+    height: 104px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.box-correct {
+    background-color: #35BD3A;
+    width: 30%;
+    border-radius: 10px;
+    left: 10px;
+    position: relative;
+}
+
+.box-wrong {
+    background-color: #FF7A7A;
+    width: 70%;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.left-arrow {
+    position: absolute;
+    top: 50%;
+    left: -5%;
+}
+
+.text {
+    width: 118%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+    margin-left: -55px;
+    margin-bottom: 100px;
+}
+
+.right-arrow {
+    position: absolute;
+    top: 50%;
+    right: -7%;
+}
+
+.button {
+    cursor: pointer;
+    margin: auto;
+    margin-top: 20px;
+    width: 224px;
+    position: relative;
+}
+
+.button .box1 {
+    position: absolute;
+    z-index: 5;
+    width: 224px;
+}
+
+.button .box2 {
+    position: absolute;
+    z-index: 6;
+    width: 216px;
+}
+
+.button h1 {
+    position: absolute;
+    z-index: 7;
+    top: 10px;
+    left: 45px;
+    width: 216px;
+    display: block;
+    color: white;
+    font-size: 24px;
+    font-weight: 600;
+}
