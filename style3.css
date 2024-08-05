@@ -6,7 +6,7 @@
 
 body {
     margin: 50px 0px;
-    font-family: "Poppins", cursive;
+    font-family: "Poppins", Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     background-color: #F6F4F0;
     width: 100%;
     display: flex;
@@ -23,9 +23,14 @@ header h1 {
     text-align: center;
 }
 
+article {
+    width: 100%;
+}
+
 .result-box {
     display: flex;
-    width: 750px;
+    margin: auto;
+    width: 50%;
     height: 104px;
     border-radius: 10px;
     position: relative;
@@ -53,11 +58,11 @@ header h1 {
 }
 
 .text {
-    width: 118%;
+    width: 61%;
     display: flex;
     justify-content: space-between;
+    margin-inline: auto;
     margin-top: 25px;
-    margin-left: -55px;
     margin-bottom: 100px;
 }
 
@@ -97,4 +102,32 @@ header h1 {
     color: white;
     font-size: 24px;
     font-weight: 600;
+}
+
+footer>h1 {
+    text-align: center;
+}
+
+@media (max-width:720px) {
+    h1 {
+        font-size: 16px;
+    }
+
+
+    .result-box {
+        height: 53px;
+        border-radius: 10px;
+        position: relative;
+        width: 80%;
+
+    }
+
+    .right-arrow {
+        right: -9%;
+    }
+
+    .text {
+        width: 95%;
+        margin-top: 44px;
+    }
 }
