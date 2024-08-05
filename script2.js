@@ -120,12 +120,14 @@ function parse() {
     var select = document.querySelectorAll(".select");
     select.forEach((each) => {
         each.addEventListener("click", (e) => {
-            if (questionArr[questCount].correct_answer === e.target.innerText) {
+            if (questionArr[questCount].correct_answer == e.target.innerHTML) {
+
                 e.target.classList.add("correct");
                 var img = document.createElement("img");
                 img.src = "./images/correct.svg";
                 e.target.append(img);
                 correctAns++;
+
             }
             else {
                 var para = document.createElement('p');
